@@ -1,36 +1,117 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Projeto — Essência do Sul 🍇
 
-## Getting Started
+Este repositório contém o desenvolvimento do site institucional **Essência do Sul**, uma marca de vinhos, espumantes e sucos de uva do Rio Grande do Sul. O objetivo deste projeto é entregar uma experiência digital elegante, moderna e funcional, representando a identidade da empresa e oferecendo recursos essenciais para clientes e revendedores.
 
-First, run the development server:
+---
+
+## ✨ Sobre o Projeto
+
+O site foi desenvolvido para apresentar a história da marca, seus produtos e seus diferenciais, com foco na simplicidade e na identidade visual da empresa. Não há valores exibidos, pois o cliente utiliza um menu externo para vendas.
+
+A plataforma também inclui uma área exclusiva para revendedores, permitindo que parceiros solicitem acesso e acompanhem informações relevantes.
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+* **Next.js** — Framework React de alta performance
+* **TailwindCSS** — Estilização rápida e responsiva
+* **Prisma ORM** — Gerenciamento de banco de dados com tipagem
+* **PostgreSQL** — Banco de dados seguro e robusto
+* **TypeScript** — Tipagem estática para maior confiabilidade
+* **MyAirGo** — Integração com o menu online da empresa
+
+---
+
+## 🎨 Identidade Visual
+
+O layout utiliza duas tonalidades principais:
+
+* **Laranja claro** (cor de fundo)
+* **Laranja escuro** (cor de destaque)
+
+Essas cores reforçam a personalidade vibrante e calorosa da marca.
+
+---
+
+## 🔗 Funcionalidades
+
+* Página institucional completa
+* Exibição de catálogo de produtos (sem preços)
+* Seção de missão, visão e valores
+* Integração direta com o menu **MyAirGo**
+* Área de revendedores com acesso restrito
+* Formulário para interessados se tornarem revendedores
+
+---
+
+## 📦 Como Rodar o Projeto
 
 ```bash
-npm run dev
-# or
+# Instalar dependências
+yarn install
+
+# Executar em modo desenvolvimento
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Gerar build de produção
+yarn build
+yarn start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Certifique-se de configurar o arquivo `.env` com os dados do PostgreSQL e variáveis necessárias para autenticação.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🗄️ Configuração do Banco de Dados
 
-## Learn More
+```bash
+npx prisma migrate dev
+npx prisma generate
+```
 
-To learn more about Next.js, take a look at the following resources:
+O Prisma cuida da estrutura e mantém o banco versionado.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 Estrutura do Projeto (resumo)
 
-## Deploy on Vercel
+```
+├── prisma
+├── public
+├── src
+│   ├── app
+│   ├── components
+│   ├── lib
+│   └── styles
+└── README.md
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔥 Próximos Passos
+
+* Painel exclusivo para revendedores
+* Sistema interno de notificações
+* Análises de visitas e insights
+* SEO avançado para melhor posicionamento
+
+---
+
+## 👨‍💻 Autor
+
+Projeto desenvolvido por **[Seu Nome]**, apaixonado por tecnologia, soluções eficientes e experiências digitais modernas.
+
+---
+
+## 📬 Contato
+
+Disponível para projetos, parcerias e novas ideias.
+
+* Email: (mailto:seuemail@exemplo.com)
+* GitHub: [https://github.com/ebarbisan](https://github.com/seuusuario)
+* LinkedIn: [http://www.linkedin.com/in/estevan-barbisan-a96881140](https://linkedin.com/in/seuperfil)
+
+---
+
+Obrigado pela visita ao repositório! 🍷
