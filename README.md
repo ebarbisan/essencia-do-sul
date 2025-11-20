@@ -108,7 +108,7 @@ Projeto desenvolvido por **[Seu Nome]**, apaixonado por tecnologia, soluções e
 
 Disponível para projetos, parcerias e novas ideias.
 
-* Email: (mailto:seuemail@exemplo.com)
+* Email: [seuemail@exemplo.com](mailto:seuemail@exemplo.com)
 * GitHub: [https://github.com/ebarbisan](https://github.com/seuusuario)
 * LinkedIn: [http://www.linkedin.com/in/estevan-barbisan-a96881140](https://linkedin.com/in/seuperfil)
 
