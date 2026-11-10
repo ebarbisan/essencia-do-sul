@@ -1,12 +1,12 @@
-// lib/prisma.ts
-import { PrismaClient } from '@prisma/client'
+import { PrismaPg } from "@prisma/adapter-pg";
+import { PrismaClient } from "../generated/prisma/client";
 
+const globalDb = globalThis as typeof globalThis & { essenceDb?: PrismaClient };
 
-declare global {
-// allow global across hot reloads in dev
-var prisma: PrismaClient | undefined
+export function database() {
+  const connectionString = process.env.DATABASE_URL;
+  if (!connectionString) throw new Error("DATABASE_URL ausente.");
+  return (globalDb.essenceDb ??= new PrismaClient({
+    adapter: new PrismaPg({ connectionString, max: 5, connectionTimeoutMillis: 5000 }),
+  }));
 }
-
-
-export const prisma = global.prisma || new PrismaClient()
-if (process.env.NODE_ENV !== 'production') global.prisma = prisma
